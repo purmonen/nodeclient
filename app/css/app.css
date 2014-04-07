@@ -6,6 +6,8 @@ body {
     background: none;
 }
 
+
+
 .post {
     overflow: hidden;
     font-family: fantasy;
@@ -43,18 +45,6 @@ body {
     color: #fe2345;
 }
 
-#space {
-    background-image: url('giraffe.jpg');
-    height: 100px;
-    width: 1000px;
-    margin: 0 auto;
-    background-position: -100px;
-    background-attachment: fixed;
-    background-size: 1400px;
-    background-repeat: no-repeat;
-    border-radius: 300px;
-}
-
 .editable {
     position: relative;
 }
@@ -71,9 +61,13 @@ body {
     bottom: 0;
 }
 
-
 .editable:hover .edit-button {
     visibility: visible;
     cursor: pointer;
+}
 
+@media screen and (max-width: 600px) { 
+    .btn-toolbar {
+        display: none;
+    }
 }
